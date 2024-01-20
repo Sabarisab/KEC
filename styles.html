@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input[type="text"]
+        {
+            border: 5px ridge peru;
+        }
+        .se{
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .sn{
+            font-size: 25px;
+            background-color:chocolate;
+            border-radius: 5px;
+            border-color: black;        
+        }
+        .sn:hover{
+            padding: 10px;
+            margin: 1px;
+            color: beige;
+
+        }
+        .sen{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            padding: 20px;
+            gap: 20px;
+            border: 4px groove gray;
+            border-radius: 12px;
+            background-color: chartreuse;
+        }
+        .sne{
+            background-color: burlywood;
+            text-align: center;
+            padding: 20px;
+            border:1px solid black;
+            border-radius: 11px;
+
+        }
+        @media(max-width:425px)
+        {
+            .sen{
+                grid-template-columns: repeat(4,1fr);
+            }
+        }
+        @media(min-width:525px)
+        {
+            .sen{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    </style>
+<head>
+    <title>Styles</title>
+</head>
+<body>
+    <input type="text" placeholder="Name" required>
+    <input type="password" placeholder="Password"><br>
+    <input type="text" placeholder="Name">
+    <input type="number" placeholder="Password" required>
+    <div class="se">
+        <div class="sn"><a href="https://developer.mozilla.org/">MDN</a></div>
+        <div class="sn"><a href="https://www.w3schools.com/">W3S</a></div>
+        <div class="sn"><a href="https://developer.mozilla.org/">MDN</a></div>
+    </div>
+    <div class="sen">
+        <div class="sne"><a href="https://developer.mozilla.org/">MDN</a></div>
+        <div class="sne"><a href="https://www.w3schools.com/">W3S</a></div>
+        <div class="sne"><a href="https://developer.mozilla.org/">MDN</a></div>
+        <div class="sne"><a href="https://developer.mozilla.org/">MDN</a></div>
+        <div class="sne"><a href="https://www.w3schools.com/">W3S</a></div>
+        <div class="sne"><a href="https://developer.mozilla.org/">MDN</a></div>
+    </div>
+    
+</body>
+</html>
